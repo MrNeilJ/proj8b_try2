@@ -36,11 +36,16 @@ int main() {
 
 
 double stdDev(Student* students[], int arraySize) {
+    // Sum of their scores
     double x = 0;
+    // Sum of their scores squared
     double xSquared = 0;
+    // N value, Population size
     double popSize = arraySize;
+    // Mew value, population mean
     double popMean;
 
+    // Loop through each student and pull their scores
     for (int i = 0; i < arraySize; i++)
     {
         x += (*students[i]).getScore();
@@ -49,6 +54,7 @@ double stdDev(Student* students[], int arraySize) {
 
     popMean = x / popSize;
 
+    // Standard deviation for a population formula
     return sqrt((xSquared/popSize) - pow(popMean, 2.0));
 
 
