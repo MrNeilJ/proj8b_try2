@@ -21,26 +21,21 @@ double stdDev (Student students[], int arraySize);
 
 int main() {
 
-    Student students[] = { {"John", 10},
-                           {"Susie" , 9},
-                           {"Doug", 8},
-                           {"Todd", 7} };
-
-    // MAKE SEPARATE STUDENT CALLS
-    Student john("John", 10);
-    Student susie("Susie", 9);
-    Student doug("Doug", 8);
-    Student todd("Todd",7);
-
     // Array of Student Pointers
+    Student* classroom[4] = {new Student("John", 10),
+                             new Student("Susie", 9),
+                             new Student("Doug", 8),
+                             new Student("Todd", 8)};
 
-    std::cout << "Standard Deviation = " << stdDev(students, 4);
+    double classDeviation = stdDev(classroom, 4);
+
+    std::cout << "The Standard Deviation for this Class is: " << classDeviation << std::endl;
     return 0;
 
 }
 
 
-double stdDev(Student students[], int arraySize) {
+double stdDev(Student* students[], int arraySize) {
     double x = 0;
     double xSquared = 0;
     double popSize = arraySize;
@@ -48,8 +43,8 @@ double stdDev(Student students[], int arraySize) {
 
     for (int i = 0; i < arraySize; i++)
     {
-        x += students[i].getScore();
-        xSquared += pow(students[i].getScore(), 2.0);
+        x += (*students[i]).getScore();
+        xSquared += pow((*students[i]).getScore(), 2.0);
     }
 
     popMean = x / popSize;
