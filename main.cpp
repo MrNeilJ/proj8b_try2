@@ -42,7 +42,7 @@ double stdDev(Student* students[], int arraySize) {
     double xSquared = 0;
     // N value, Population size
     double popSize = arraySize;
-    // Mew value, population mean
+    // Mu value, population mean
     double popMean;
 
     // Loop through each student and pull their scores
