@@ -17,7 +17,7 @@
 #include "Student.hpp"
 
 // Prototypes
-double stdDev (Student students[], int arraySize);
+double stdDev (Student* students[], int arraySize);
 
 int main() {
 
@@ -30,6 +30,9 @@ int main() {
     double classDeviation = stdDev(classroom, 4);
 
     std::cout << "The Standard Deviation for this Class is: " << classDeviation << std::endl;
+
+    delete [] classroom;
+
     return 0;
 
 }
