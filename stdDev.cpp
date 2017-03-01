@@ -10,14 +10,14 @@
  * stored scores.
 **************************************************************/
 
-#include <iostream>
+// #include <iostream>
 #include <cmath>
 #include "Student.hpp"
 
 // Prototypes
 double stdDev (Student* classroom[], int arraySize);
 
-
+/*
 int main() {
 
     // Array of Student Pointers
@@ -34,9 +34,8 @@ int main() {
 
 
     return 0;
-
 }
-
+*/
 
 /**************************************************************
  *                  stdDev
