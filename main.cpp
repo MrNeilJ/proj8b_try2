@@ -22,7 +22,7 @@ double stdDev (Student* classroom[], int arraySize);
 int main() {
 
     // Array of Student Pointers
-    Student* classroom[4] = {new Student("John", 10),
+    Student* classroom[] =  {new Student("John", 10),
                              new Student("Susie", 9),
                              new Student("Doug", 8),
                              new Student("Todd", 7)};
