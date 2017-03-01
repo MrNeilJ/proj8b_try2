@@ -10,8 +10,8 @@
  * the get member functions as noted below.
 **************************************************************/
 
-#ifndef PROJ8B_STUDENT_HPP
-#define PROJ8B_STUDENT_HPP
+#ifndef STUDENT_HPP
+#define STUDENT_HPP
 
 #include <string>
 
@@ -31,4 +31,4 @@ public:
 };
 
 
-#endif //PROJ8B_STUDENT_HPP
+#endif //STUDENT_HPP
