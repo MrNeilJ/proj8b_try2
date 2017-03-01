@@ -31,6 +31,7 @@ int main() {
 
     std::cout << "The Standard Deviation for this Class is: " << classDeviation << std::endl;
 
+    // Free up allocated memory once we are done with it.
     delete [] classroom;
 
     return 0;
