@@ -25,7 +25,7 @@ int main() {
     Student* classroom[4] = {new Student("John", 10),
                              new Student("Susie", 9),
                              new Student("Doug", 8),
-                             new Student("Todd", 8)};
+                             new Student("Todd", 7)};
 
     double classDeviation = stdDev(classroom, 4);
 
